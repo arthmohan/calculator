@@ -1,9 +1,11 @@
 *{
-    background-color: hsl(240, 5%, 30%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+body{
+    background-color: hsl(240, 5%, 30%);
 }
 
 .app{
