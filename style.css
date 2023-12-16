@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+.body{
+    background-color: hsl(240, 5%, 30%);
+}
+
 .app{
     display: flex;
     justify-content: center;
