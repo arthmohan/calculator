@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    background-color: hsl(240, 5%, 12%);
+    width: 100%;
+    max-width: 400px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.display{
+    min-height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #d8dbe2;
+    text-align: right;
+    flex: 1 1 0%;
+
+}
+
+.display .input{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.display .output{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.display .operator{ 
+    color: #ED6A5A;
+}
+
+.display .brackets, .percent{
+    color: #58A4B0
+}
+
+.keys{
+    background-color: hsl(240, 5%, 15%);
+    padding: 1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: (5, 1fr);
+    grid-gap: 1rem;
+    box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.keys .key{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    padding-top: 100%;
+    background-color: hsl(240, 5%, 20%);
+    border-radius: 50%;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.keys .key span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #d8dbe2;
+}
+
+.key:hover{
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: hsl(240, 5%, 25%);
+    transition: 0.3s;
+}
+
+.keys .key.operator span{
+    color: #ED6A5A;
+}
+
+.keys .key.action span{
+    color: #58A4B0;
+}
+
+.display .operator {
+    color: #ED6A5A;
+}
+
+.display .brackets, .percent {
+    color: #58A4B0;
+}
